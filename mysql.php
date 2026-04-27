@@ -6,10 +6,9 @@
  */
 
 ob_start();
-@ini_set('display_errors', '0');
 @ini_set('html_errors', '0');
 @ini_set('default_charset', 'UTF-8');
-@error_reporting(E_ALL);
+@error_reporting(0);
 
 if (session_id() === '') {
     @session_start();
@@ -59,9 +58,9 @@ function safe_json_decode($json) {
    DEFAULT CONFIG
    kalau diisi -> auto login
 ========================= */
-$db_host = 'localhost';
-$db_user = 'pncaggoi_web2';
-$db_pass = 'GwdXd_vV~*(O';
+$db_host = '';
+$db_user = '';
+$db_pass = '';
 $db_name_default = '';
 
 /* =========================
